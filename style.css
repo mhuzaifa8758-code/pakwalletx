@@ -1,8 +1,0 @@
-body{font-family:Arial;background:#f3f4f6;margin:0;padding-bottom:70px}.wrap{max-width:420px;margin:auto;padding:16px}
-.hero{background:#ff7a00;color:#fff;padding:24px;border-radius:24px;text-align:center}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-.card{background:#fff;padding:18px;border-radius:22px;box-shadow:0 8px 18px rgba(0,0,0,.08);text-align:center}
-.big{font-size:28px;font-weight:700;color:#ff7a00;margin-top:8px}
-button{margin-top:10px;width:100%;padding:10px;border:none;border-radius:14px;background:#ff7a00;color:#fff;font-weight:700}
-.bottom{position:fixed;bottom:0;left:0;right:0;background:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:14px 8px;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
-.bottom a{text-align:center;font-weight:700;color:#333}
