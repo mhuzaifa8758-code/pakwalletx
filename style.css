@@ -1,0 +1,14 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f3f4f6;padding-bottom:80px}
+.app{max-width:430px;margin:auto;padding:16px}
+.hero{background:#ff7a00;color:#fff;padding:28px;border-radius:24px;text-align:center}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.tabs button,.bottom button,button,.linkbtn{padding:12px;border:none;border-radius:14px;background:#ff7a00;color:#fff;font-weight:700;text-decoration:none}
+.card{background:#fff;padding:18px;border-radius:22px;box-shadow:0 8px 18px rgba(0,0,0,.08);margin-top:12px}
+input{width:100%;padding:12px;margin-top:10px;border:1px solid #ddd;border-radius:14px;box-sizing:border-box}
+.page{display:none}.page.active{display:block}
+.pkg{padding:12px;background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;margin:8px 0;font-weight:700}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:#fafafa;border-radius:16px;padding:14px;text-align:center}
+.mini span{display:block;margin-top:8px;color:#ff7a00;font-weight:700}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#fff;padding:10px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+.linkbtn{display:block;text-align:center;margin-top:10px}
