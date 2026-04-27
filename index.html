@@ -1,0 +1,61 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>PakWalletX</title>
+<style>
+body{margin:0;font-family:Arial;background:#f3f4f6}.app{max-width:430px;margin:auto;padding:16px}
+.hero{background:#ff7a00;color:#fff;padding:24px;border-radius:24px;text-align:center}
+.card{background:#fff;padding:18px;border-radius:22px;margin-top:14px;box-shadow:0 8px 18px rgba(0,0,0,.08)}
+input,button{width:100%;padding:12px;margin-top:10px;border-radius:14px;border:1px solid #ddd;box-sizing:border-box}
+button{background:#ff7a00;color:#fff;border:none;font-weight:700}
+.page{display:none}.page.active{display:block}.pkg{padding:12px;background:#fff7ed;border-radius:12px;margin:8px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+</style></head><body>
+<div class='app'>
+<header class='hero'><h1>PakWalletX</h1><p>Single File Version</p></header>
+
+<div id='login' class='page active card'>
+<h2>Login</h2><input placeholder='Email'><input placeholder='Password' type='password'>
+<button onclick="showPage('signup')">Go Sign Up</button>
+<button onclick="showPage('dashboard')">Login</button>
+</div>
+
+<div id='signup' class='page card'>
+<h2>Sign Up</h2><input placeholder='Name'><input placeholder='Phone'><input placeholder='Password'>
+<button onclick="showPage('packages')">Create Account</button>
+</div>
+
+<div id='packages' class='page card'>
+<h2>Packages</h2>
+<div class='pkg'>Starter Rs600</div><div class='pkg'>Silver Rs1600</div><div class='pkg'>Gold Rs3000</div><div class='pkg'>Platinum Rs5000</div>
+<p>Easypaisa: 03351725854<br>Muhammad Huzaifa Malik</p>
+<button onclick="showPage('pending')">Submit Deposit</button>
+</div>
+
+<div id='pending' class='page card'>
+<h2>Pending Approval</h2><button onclick="showPage('dashboard')">Demo Approve</button>
+</div>
+
+<div id='dashboard' class='page card'>
+<h2>Dashboard</h2>
+<div class='grid'>
+<button onclick="showPage('withdraw')">Withdraw</button>
+<button onclick="showPage('tasks')">Tasks</button>
+<button onclick="showPage('history')">History</button>
+<button onclick="showPage('profile')">Profile</button>
+</div>
+<button onclick="showPage('admin')">Admin Panel</button>
+</div>
+
+<div id='withdraw' class='page card'><h2>Withdraw</h2><button onclick="showPage('dashboard')">Back</button></div>
+<div id='tasks' class='page card'><h2>Tasks</h2><button onclick="showPage('dashboard')">Back</button></div>
+<div id='history' class='page card'><h2>History</h2><button onclick="showPage('dashboard')">Back</button></div>
+<div id='profile' class='page card'><h2>Profile</h2><button onclick="showPage('dashboard')">Back</button></div>
+<div id='admin' class='page card'><h2>Admin Panel</h2><p>Pending Deposits / Users</p><button onclick="showPage('dashboard')">Exit</button></div>
+
+</div>
+<script>
+function showPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+window.scrollTo(0,0);
+}
+</script></body></html>
