@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blue Dark Signup/Login UI">
+<title>Blue Dark Signup</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at top right,#1e40af,#0f172a 55%,#020617);color:#fff;padding:20px}
+.card{width:380px;max-width:92%;padding:35px 28px;border:2px solid rgba(255,255,255,.35);border-radius:28px;background:rgba(2,6,23,.65);backdrop-filter:blur(10px);box-shadow:0 0 25px rgba(59,130,246,.35)}
+.logo{text-align:center;font-size:34px;margin-bottom:14px}
+h1{text-align:center;color:#60a5fa;font-size:42px;text-shadow:0 0 15px rgba(96,165,250,.8)}
+p.sub{text-align:center;color:#94a3b8;margin:8px 0 28px}
+.input{margin:14px 0}
+.input input{width:100%;padding:16px 18px;border-radius:18px;border:1px solid rgba(59,130,246,.4);background:rgba(255,255,255,.06);color:#fff;font-size:18px;outline:none}
+.row{display:flex;justify-content:space-between;align-items:center;margin:14px 0;color:#eee;font-size:15px;gap:10px}
+.row a,.footer a{color:#60a5fa;text-decoration:none;font-weight:700}
+button{width:100%;margin-top:18px;padding:16px;border:none;border-radius:18px;font-size:24px;font-weight:700;color:#fff;cursor:pointer;background:linear-gradient(90deg,#1d4ed8,#38bdf8);box-shadow:0 0 25px rgba(59,130,246,.7)}
+button:hover{transform:translateY(-2px)}
+.footer{text-align:center;margin-top:26px;color:#94a3b8}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="logo">👻</div>
+<h1>Sign Up</h1>
+<p class="sub">Create account to start earning</p>
+<form action="#" method="get">
+<div class="input"><input type="text" placeholder="Full Name" required></div>
+<div class="input"><input type="email" placeholder="Email" required></div>
+<div class="input"><input type="password" placeholder="Password" required></div>
+<div class="row"><label><input type="checkbox"> Remember me</label><a href="#">Forgot Password?</a></div>
+<button type="submit">Create Account</button>
+</form>
+<p class="footer">Already have an account? <a href="login.html">Login now!</a></p>
+</div>
+</body>
+</html>
